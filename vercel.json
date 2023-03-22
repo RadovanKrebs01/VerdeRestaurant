@@ -1,13 +1,13 @@
 {
   "builds": [{
-    "src": "VerdeRestaurant/wsgi.py",
+    "src": "restaurant/wsgi.py",
     "use": "@vercel/python",
     "config": { "maxLambdaSize":  "15mb", "runtime": "python 3.8" }
   }],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "VerdeRestaurant/wsgi.py"
+      "dest": "restaurant/wsgi.py"
     }
   ]
 }
