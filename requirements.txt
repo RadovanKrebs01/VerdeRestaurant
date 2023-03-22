@@ -6,3 +6,4 @@ simplejson==3.18.0
 six==1.16.0
 sqlparse==0.4.3
 urllib3==1.26.12
+pysqlite3=0.5.0
