@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    {% if request.user.is_superuser %}
+        <form class="delete-image" method="POST" target="{% url 'manage-photo' pk=image.id %}">
+            {% csrf_token %}
+            <button class="delete-btn" type="submit">Vymazať</button>
+        </form>
+    {% endif %}
+    <img src="{{ image.image.url }}" class="image-detail">
+
+{% endblock content %}

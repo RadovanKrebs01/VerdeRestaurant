@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <form class="forms" method="POST" target="{% url 'add-photos' %}" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        <h2>Vyberte fotky</h2>
+        <input class="input-elem" required type="file" name="images" multiple value="Vyber subory">
+        <input class="input-elem" type="submit" name="submit" value="Nahrať">
+    </form>
+{% endblock content %}

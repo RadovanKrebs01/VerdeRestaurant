@@ -1,0 +1,48 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="main">
+        <!--<div class="flex-main-elem">
+        </div> -->
+        <div class="flex-elem text-elem">
+            <div class="info-block">
+                <h3>O nás</h3>
+                <p>
+                    Naša reštaurácia sa zaoberá závodným stravovaním, rozvozom obedového menu a aj spoločenskými
+                    akciami ako sú oslavy, narodeniny, svadby, krstiny, kary, a taktiež službami v oblasti cateringu.
+                </p>
+                <p>Tu nájdete našu <a href="/#footer">adresu, kontakt a otváracie hodiny</a>.</p>
+            </div>
+        </div>
+        <div class="flex-elem map-elem">
+            <div>
+                <img class="map" src="{% static 'images/verde-lokacia.png' %}" alt="Poloha na mape"/>
+            </div>
+        </div>
+    </main>
+
+    {% include 'gallery.html' %}
+    <footer class="footer" id="footer">
+        <div class="footer-block">
+            <h3 class="footer-block-title">Adresa</h3>
+            <p>Pinelova 773</p>
+            <p>908 73, Veľké Leváre</p>
+        </div>
+        <div class="footer-block">
+            <h3 class="footer-block-title">Kontakt</h3>
+            <div class="doubles">
+                <p><strong>Tel. Reštaurácia: </strong> <span class="float-right">0908 155 773</span></p>
+                <p><strong>Tel. Catering: </strong> <span class="float-right">0944 538 800</span></p>
+                <p><strong>Email Catering: </strong> <span class="float-right">Verde@cateringverde.sk</span></p>
+            </div>
+        </div>
+        <div class="footer-block">
+            <h3 class="footer-block-title">Otvaracie hodiny</h3>
+            <div class="opening-hours">
+                <p>Podelok-Piatok<span class="float-right">10:00-14:00</span></p>
+                <p>Sobota-Nedela<span class="float-right">Zatvorene</span></p>
+            </div>
+        </div>
+    </footer>
+{% endblock content %}

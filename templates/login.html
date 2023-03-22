@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <form method="POST" action="{% url 'login' %}" class="forms">
+        {% csrf_token %}
+        <label class="input-elem label">
+            Používateľské meno
+            <input class="input-elem" type="text" name="username" placeholder="Vložte Meno">
+        </label>
+
+        <label class="input-elem label">
+            Heslo
+            <input class="input-elem" type="password" name="password" placeholder="Vložte Heslo">
+        </label>
+
+        <button type="submit">Prihlásiť</button>
+    </form>
+{% endblock content %}

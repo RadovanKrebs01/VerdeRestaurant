@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-div {
+    width: 100%;
+    height: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    background-color: darkolivegreen;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+#logo {
+    max-width: 350px;
+    border-radius: 50%;
+    padding: 15px;
+    justify-self: center;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 100px 0 0 0;
+}
+
+h1 {
+     color: forestgreen;
+}
+
+.flex-main-elem {
+    width: 95%;
+    text-align: center;
+}
+
+.flex-elem {
+    width: 35%;
+    min-width: 450px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 470px;
+}
+
+.map-elem {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-block {
+    width: 80%;
+    margin: 60px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+.info-block a {
+    color: forestgreen;
+}
+
+.info-block h3 {
+    font-size: 1.6em;
+    color: forestgreen;
+}
+
+.opening-hours {
+    text-align: left;
+}
+
+.opening-hours-title {
+    margin-top: 50px;
+}
+.open-time {
+    float: right;
+}
+
+.map {
+    max-height: 90%;
+    max-width: 100%;
+    border: rgba(155, 155, 155, 0.3) 1px solid;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    background-color: rgb(55, 55, 55);
+    padding: 25px 0 50px 0;
+    flex-wrap: wrap;
+}
+
+.footer-block {
+    max-width: 400px;
+}
+
+.doubles {
+    text-align: left;
+}
+
+.footer-block-title {
+    margin-top: 50px;
+    text-align: center;
+}
+.float-right {
+    float: right;
+    padding-left: 15px;
+}
+
+/* GALLERY */
+
+.gallery {
+    text-align: center;
+    width: 75%;
+    margin: 40px auto;
+    padding: 25px 0;
+}
+
+.gallery h2 {
+    color: forestgreen;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-elem {
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.gallery-image {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 10px;
+    border: gray 1px dashed;
+}
+
+.add-image-box {
+    background-color: lightgray;
+    border: 1px gray dashed;
+    color: gray;
+    margin: 10px 10px;
+}
+
+.add-image-box h3 {
+    margin: 80px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.add-image-box a:link{
+    color: whitesmoke;
+}
+
+.add-image-box a{
+    color: whitesmoke;
+}
+
+.gallery-image-frame:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.login-link {
+    justify-self: flex-end;
+    position: relative;
+    color: rgb(55,55,55);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/* IMAGE INPUT*/
+
+.forms {
+    width: 60%;
+    height: 60%;
+    padding: 50px 150px;
+    margin: 50px auto;
+    border: gray 5px solid;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input-elem {
+    display: block;
+    margin: 10px 0;
+}
+
+/* IMAGE DETAIL*/
+
+.image-detail {
+    max-width: 90%;
+    margin: 50px auto;
+    display: block;
+}
+
+.delete-image {
+    display: block;
+    margin: 50px auto;
+}
+
+.delete-image button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 50px;
+    font-size: 3em;
+    color: whitesmoke;
+    background-color: darkred;
+    border-radius: 10px;
+}
+
+.delete-image button:hover {
+    cursor: pointer;
+    background-color: red;
+}

@@ -1,0 +1,19 @@
+<div class="gallery">
+    <h2>Galéria</h2>
+    <div class="gallery-container">
+        {% for img in images %}
+            <a class="gallery-image gallery-elem" href="{% url 'manage-photo' pk=img.id %}"
+                    style="background-image: url({{ img.image.url }})"></a>
+        {% endfor %}
+        {% if request.user.is_superuser %}
+            <a class="gallery-elem add-image-box" href="{% url 'add-photos' %}">
+                <h3>Pridat fotku</h3>
+            </a>
+        {% endif %}
+    </div>
+    {% if request.user.is_authenticated %}
+        <a class="login-link" href="{% url 'logout' %}">Odhlásiť</a>
+    {% else %}
+        <a class="login-link" href="{% url 'login' %}">Prihlásiť</a>
+    {% endif %}
+</div>
