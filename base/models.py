@@ -1,7 +1,8 @@
 from django.db import models
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
 
-# Create your models here.
-
+fs = FileSystemStorage(location=settings.MEDIA_ROOT)
 
 class Picture(models.Model):
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(storage=fs, null=True, blank=True)
